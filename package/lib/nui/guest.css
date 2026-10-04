@@ -1,0 +1,38 @@
+/* Fortnite guest HUD (lib/nui/guest.css) (lookalike, original drawing): bars bottom-left, hotbar + mats bottom-right, counters top-right. */
+#guest { position: fixed; inset: 0; pointer-events: none; font-family: 'Bebas Neue', 'Impact', sans-serif; }
+#guest .bars { position: absolute; left: 3vw; bottom: 5vh; width: 26vw; }
+#guest .bar { position: relative; height: 2.6vh; margin-top: .8vh; background: rgba(0,0,0,.45); transform: skewX(-12deg); overflow: hidden; }
+#guest .bar i { position: absolute; inset: 0 auto 0 0; transition: width .2s; }
+#guest .bar.shield i { background: linear-gradient(#7fd0ff, #2f8ff0); }
+#guest .bar.hp i { background: linear-gradient(#a8f07a, #4cb52c); }
+#guest .bar b { position: absolute; left: .6vw; top: 50%; transform: translateY(-50%) skewX(12deg); font-size: 2.4vh; text-shadow: 0 1px 2px #000; }
+#guest .counters { position: absolute; right: 2vw; top: 2vh; display: flex; gap: 1.2vw; font-size: 3.4vh; text-shadow: 0 2px 3px #000; }
+#guest .counters span { background: rgba(0,0,0,.35); padding: .2vh .8vw; border-radius: .4vh; }
+#guest .storm.warn { color: #d9a6ff; }
+#guest .hotbar { position: absolute; right: 9vw; bottom: 4vh; display: flex; gap: .5vw; }
+#guest .slot { width: 6vh; height: 6vh; border-radius: .6vh; background: rgba(0,0,0,.45); border: .25vh solid rgba(255,255,255,.25);
+  display: flex; align-items: flex-end; justify-content: center; font-size: 1.5vh; padding-bottom: .4vh; box-sizing: border-box; text-align: center; line-height: 1; }
+#guest .slot.on { border-color: #fff; transform: translateY(-.8vh); transition: transform .12s; }
+#guest .mats { position: absolute; right: 2vw; bottom: 4vh; display: flex; flex-direction: column; gap: .6vh; font-size: 2.8vh; }
+#guest .mat { display: flex; align-items: center; gap: .5vw; justify-content: flex-end; text-shadow: 0 1px 2px #000; }
+#guest .mat i { width: 2.6vh; height: 2.6vh; border-radius: .4vh; display: inline-block; border: .2vh solid rgba(255,255,255,.6); }
+#guest .mat.wood i { background: #c88a4a; }
+#guest .mat.brick i { background: #b0503c; }
+#guest .mat.metal i { background: #9aa6b4; }
+#guest .mat.sel { color: #ffe066; }
+#guest .mat .pop { color: #fff; margin-right: .4vw; animation: fnpop .8s forwards; }
+@keyframes fnpop { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-2vh); } }
+#guest .feed { position: absolute; left: 2vw; top: 32vh; display: flex; flex-direction: column; gap: .5vh; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.7vh; }
+#guest .feed div { background: rgba(0,0,0,.45); padding: .4vh .7vw; border-radius: .4vh; animation: fnfade 6s forwards; }
+#guest .feed .you { color: #ffe066; }
+@keyframes fnfade { 0%, 80% { opacity: 1; } 100% { opacity: 0; } }
+#guest .elim { position: absolute; left: 50%; top: 62vh; transform: translateX(-50%); text-align: center; font-size: 3.6vh; letter-spacing: .1em; animation: fnfade 2.5s forwards; text-shadow: 0 2px 4px #000; }
+#guest .elim b { display: block; color: #ff4d4d; font-size: 2.4vh; }
+#guest .pickup { position: absolute; left: 50%; bottom: 16vh; transform: translateX(-50%); font-size: 3vh; padding: .5vh 1.4vw; border-radius: .5vh; animation: fnfade 2.2s forwards; }
+#guest .victory { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; pointer-events: none;
+  background: radial-gradient(circle at 50% 45%, rgba(255,210,80,.35), transparent 60%); animation: fnvin .5s cubic-bezier(.2,1.6,.4,1); }
+#guest .victory .one { font-family: 'Luckiest Guy', 'Impact', sans-serif; font-size: 16vh; color: #ffd84a; -webkit-text-stroke: .5vh #4a2a00; paint-order: stroke fill; line-height: .9; }
+#guest .victory .title { font-family: 'Luckiest Guy', 'Impact', sans-serif; font-size: 9vh; background: linear-gradient(#fff6c2, #ffc21a 55%, #e08a00);
+  -webkit-background-clip: text; color: transparent; filter: drop-shadow(0 .6vh 0 #4a2a00); letter-spacing: .05em; }
+#guest .victory .sub { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 2.6vh; margin-top: 1vh; text-shadow: 0 2px 4px #000; }
+@keyframes fnvin { from { transform: scale(1.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }

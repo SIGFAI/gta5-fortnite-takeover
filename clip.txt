@@ -1,0 +1,7 @@
+Moments the clip must show, in this order (ticked = seen in the preview screenshots):
+[x] 1. Smash the Llama pinata with the pickaxe: CRACK, candy burst, loot beams spill out.
+[x] 2. A golden chest opens, a gold legendary rifle spills out under a gold beam and the hotbar slot fills.
+[x] 3. The gold rifle shoots a bot behind a built wall: ELIMINATED, then #1 VICTORY ROYALE.
+[x] 4. Pickaxe harvest (tree falls, +12 numbers, materials rise) and the blue ghost wall/ramp before the real pieces pop in.
+[x] 5. Cranking 90s: the player runs up a four-level tower that builds itself.
+Weak spots: the loading screen length is outside the mod; the demo starts only when the world is ready. The wood wall in the final fight is large.
