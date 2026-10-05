@@ -1,0 +1,271 @@
+{
+  "id": "sigf/gta5-fortnite-takeover",
+  "version": "1.0.0",
+  "name": "Fortnite Takeover",
+  "tagline": "Fortnite takes over GTA V: pickaxe harvest, blue build previews, cranking 90s, the Llama, chests and the gold assault rifle. The mod is built and passes the kit check. Run the check once, record the demo clip and ship it.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "gta5",
+      "role": "host",
+      "engine": "GTA V Legacy + FiveM (local FXServer, CfxLua 5.4 resource, NUI HTML overlay, streamed .ydr props)",
+      "apps": {
+        "steam": "271590"
+      }
+    },
+    {
+      "game": "fortnite",
+      "role": "guest",
+      "label": "Fortnite",
+      "canonical": false
+    }
+  ],
+  "requires": [
+    {
+      "id": "fivem"
+    }
+  ],
+  "install": [
+    {
+      "game": "gta5",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "gta5-fortnite-takeover.zip",
+          "dst": "{fivem}/resources/sigf_fortnite_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "client.lua",
+              "sha256": "a4c41e4f262e5f36e4c1a6e7ab07d73e22acf46b43cff3d0a7679aa816bb2f33"
+            },
+            {
+              "path": "demo.lua",
+              "sha256": "8fb551a2bff2eb54374d93e9fa921b852bbb78dd1576ac8d0a21d6e3227e1c6d"
+            },
+            {
+              "path": "fxmanifest.lua",
+              "sha256": "f5bcf963dca6e9e020592e777a8b7a84cebdb5af79ee2de5e07c9207700818e7"
+            },
+            {
+              "path": "guest.txt",
+              "sha256": "51aa8f7f35a1d0a8da0f6f3479d68363ee8577b64b98760a4da3b175520def29"
+            },
+            {
+              "path": "lib/cl_bricks.lua",
+              "sha256": "2b8b55eb059aae8d51b7d9fe8a6264174c9156e6ebe9ba998165086087136bd4"
+            },
+            {
+              "path": "lib/cl_demo.lua",
+              "sha256": "00e02ecdcdf629411cfdbbe780e993eec6cd72b663b9de7052c34c175fc94d4d"
+            },
+            {
+              "path": "lib/cl_fn.lua",
+              "sha256": "6ab23d264ad7b9f123f111a9afa1eeb677dc025a82cbc49b7fda2c509ab83216"
+            },
+            {
+              "path": "lib/cl_ready.lua",
+              "sha256": "ef9bd4698240643ffefc8374dc394ca25c988d2851c6ea613f43be31c850b3cb"
+            },
+            {
+              "path": "lib/nui/guest.css",
+              "sha256": "724bc1970cb9b222ee7fb4707bf72ab4179c20922b4f27bf1dcf606c7f560227"
+            },
+            {
+              "path": "lib/nui/guest.js",
+              "sha256": "db24ddb1b752201cc27ccb61433ccaa6a9994bb66e9267c5022d08cb0d2d24ad"
+            },
+            {
+              "path": "lib/nui/hud.css",
+              "sha256": "8dddfe6c6a3df9be201f6ff899bef6543900ce732f08fd84851fc7a99600199a"
+            },
+            {
+              "path": "lib/nui/hud.html",
+              "sha256": "4f50adc689e98702c29b99d7ba56b40a7a62f625da26775384db7d5afaa02a65"
+            },
+            {
+              "path": "lib/nui/hud.js",
+              "sha256": "d57cb6be5fff6f6f7452540d4edc033cdfb7d535c3193922dc24a75aa013ac38"
+            },
+            {
+              "path": "lib/sh_bricks.lua",
+              "sha256": "c84f8853c8a45a51f589513c31f1d567d40b931a54e744419077a5ea72a43023"
+            },
+            {
+              "path": "lib/sv_bricks.lua",
+              "sha256": "5fc3c94d19b751f0dc08dfb6c8de49bfd2005ebe91f557fcd1dce0f5fb3eab34"
+            },
+            {
+              "path": "lib/sv_fn.lua",
+              "sha256": "a7c28a7957bc58fdbdc09ec6c6a4021c4e923d94c1bcefc08bd9e444e4004a01"
+            },
+            {
+              "path": "sfx/fn_build.ogg",
+              "sha256": "3f8ba6601d116f8b158c0cbfc87bffff9d5162bf94ff9bdde72d1ce8d839acf2"
+            },
+            {
+              "path": "sfx/fn_chest.ogg",
+              "sha256": "6d7c42384d1afa516deb5a0aa8eb0c4ebee8bc944990615e4eb3f5a61bd75e58"
+            },
+            {
+              "path": "sfx/fn_storm.ogg",
+              "sha256": "a8fb053d9491652343871e095e804118c4efe14d36412336e86755564647e872"
+            },
+            {
+              "path": "sfx/fn_win.ogg",
+              "sha256": "2b913ee6ed83a7dfff9d64ab359723f1b060a8b5abec39a72208e73d94081414"
+            },
+            {
+              "path": "stream/sigf_fn_chest.ydr",
+              "sha256": "4074e5f3d51b0a6bebb83085e3005f9817361390b669ea2291993cf2d51ae93e"
+            },
+            {
+              "path": "stream/sigf_fn_chest.ytyp",
+              "sha256": "8a7da5576760048c52d54767f05f4c7efeb7d429f382b8bf2839f25d94abfc46"
+            },
+            {
+              "path": "stream/sigf_fn_cone_brick.ydr",
+              "sha256": "6d8f44378b54acabac59fc09044c38eb14eef9dd23d5fe3210b220d5ca02bd43"
+            },
+            {
+              "path": "stream/sigf_fn_cone_brick.ytyp",
+              "sha256": "6bf3286f162a51e6ff45a61a0bf1e8fa93b0603bfab95d30a818ea55e116ea2a"
+            },
+            {
+              "path": "stream/sigf_fn_cone_metal.ydr",
+              "sha256": "6c322b1b2af1818425e7e9a9ef71a6395a9d600436b60a69f47a2790b406851a"
+            },
+            {
+              "path": "stream/sigf_fn_cone_metal.ytyp",
+              "sha256": "06d7ca5984b600d2c999132a9701bb7eedd931ac20909947fefa4f148b221d12"
+            },
+            {
+              "path": "stream/sigf_fn_cone_wood.ydr",
+              "sha256": "2c207569c27699464f6be985d37c69c3c298fa532428451a5cfdddaf78af46a6"
+            },
+            {
+              "path": "stream/sigf_fn_cone_wood.ytyp",
+              "sha256": "5942f3751a55c500906b0483c0a868fe762c97d8a3b1965e2f318b2ed015abad"
+            },
+            {
+              "path": "stream/sigf_fn_floor_brick.ydr",
+              "sha256": "be965760f3aea12c24697f02128032b8dd1d7703da19c1402a04ec9b29184faa"
+            },
+            {
+              "path": "stream/sigf_fn_floor_brick.ytyp",
+              "sha256": "9bf84db7cc6de747cc26caa2febd7bda662ee17a111a20942f2ee24bc9796393"
+            },
+            {
+              "path": "stream/sigf_fn_floor_metal.ydr",
+              "sha256": "03d4c556631f6d771790ee575d55592c42ab8bfcc37809a9ec3a5e7e00be4990"
+            },
+            {
+              "path": "stream/sigf_fn_floor_metal.ytyp",
+              "sha256": "baa09bde6b11471958aacbd84a51c13d8ee5cd7682441b39c81e99df638b7697"
+            },
+            {
+              "path": "stream/sigf_fn_floor_wood.ydr",
+              "sha256": "2707d2827b5acd3849f5719c796aa667d938513225bedb07f92e604fb2c9f9d8"
+            },
+            {
+              "path": "stream/sigf_fn_floor_wood.ytyp",
+              "sha256": "61fcb7773b8b51adb46c69901b0f4fc4df1ad1495c3034faee4eb74d1919c659"
+            },
+            {
+              "path": "stream/sigf_fn_llama.ydr",
+              "sha256": "9abe5354095432deee1bc4ed5ba68232468734b6daa5d35892e0f6a93c450431"
+            },
+            {
+              "path": "stream/sigf_fn_llama.ytyp",
+              "sha256": "6ea0a796d6332ba336f0cdea1a58bc8069bb8b09e708ca92de8f39fa373bbb09"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_brick.ydr",
+              "sha256": "c01607dbe64da53b2b372989bbceddeade40a50f14f2d9304a930d5c1595ab72"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_brick.ytyp",
+              "sha256": "c4a8ee78bf11035df9e60d979e7c51f572de5d7c43e0cfa0ba3d36a902fb23a5"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_metal.ydr",
+              "sha256": "c9a28adbd532370d3238b2b2f0abf0600cc324af0eeb7e1008b05179938ed01a"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_metal.ytyp",
+              "sha256": "1d249348e97afd695301c0f53f45c126f48d72b0a85dca9af5efc589b1d70630"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_wood.ydr",
+              "sha256": "c035ab2bcb7ff92a7d43dca2cf4efff3871d5549296cafbada558a628769123c"
+            },
+            {
+              "path": "stream/sigf_fn_ramp_wood.ytyp",
+              "sha256": "f8a7ad68cae97ff68aab069f0767200160c4d87eeae2ba59091d6cb499083d73"
+            },
+            {
+              "path": "stream/sigf_fn_wall_brick.ydr",
+              "sha256": "4c36fd76219aea3b7a4e90a44e63c90d93c9d6363437e277f7562ff94d905a08"
+            },
+            {
+              "path": "stream/sigf_fn_wall_brick.ytyp",
+              "sha256": "9c07350f5f31038bf9ced0cbf45a33abdfeb181c9093feda81fa9013cbd1a8d1"
+            },
+            {
+              "path": "stream/sigf_fn_wall_metal.ydr",
+              "sha256": "55f88c4977b9e26a24cf50b5106247e86e938fb927906cf8c5c08244a06875c0"
+            },
+            {
+              "path": "stream/sigf_fn_wall_metal.ytyp",
+              "sha256": "4a5d41c879c3b8c9c026d6f7d1f239cc2786d8a9fe2d1782bc9ce82bda3fd830"
+            },
+            {
+              "path": "stream/sigf_fn_wall_wood.ydr",
+              "sha256": "10e44de9fa69bba3a44003623c54819f9ee098f48655ad0b5bbe61fc56b9487e"
+            },
+            {
+              "path": "stream/sigf_fn_wall_wood.ytyp",
+              "sha256": "7121f36be6bed7ee034b8d7c12386848dbd423ded91050156529d35f6b3f61f8"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/gta5-fortnite-takeover/releases/download/v1.0.0/gta5-fortnite-takeover.zip",
+          "sha256": "1f3d24279112786826d4ddef507b8b46951949b9919d3152e661cbb6547203dc",
+          "size": 696204
+        }
+      ],
+      "runtime": "fivem"
+    }
+  ],
+  "launch": [
+    {
+      "game": "gta5",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "gta5-fortnite-takeover.zip",
+      "url": "https://github.com/SIGFAI/gta5-fortnite-takeover/releases/download/v1.0.0/gta5-fortnite-takeover.zip",
+      "sha256": "1f3d24279112786826d4ddef507b8b46951949b9919d3152e661cbb6547203dc",
+      "size": 696204
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/gta5-fortnite-takeover",
+    "license": "MIT"
+  },
+  "media": {},
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "gta5",
+    "status": "draft"
+  },
+  "built_at": "2026-10-05T15:23:39.533Z",
+  "notes": [
+    "Put the mod folder in your FiveM server's resources folder as sigf_mod, add \"ensure sigf_mod\" to server.cfg, then join the server. It works anywhere on the map."
+  ]
+}
