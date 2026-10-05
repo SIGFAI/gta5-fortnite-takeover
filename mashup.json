@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "name": "Fortnite Takeover",
   "tagline": "Fortnite takes over GTA V: pickaxe harvest, blue build previews, cranking 90s, the Llama, chests and the gold assault rifle. The mod is built and passes the kit check. Run the check once, record the demo clip and ship it.",
+  "how_to_play": [
+    "A Fortnite match starts around you: the Battle Bus drops bots, chests appear and the storm closes in.",
+    "Hold Z, X, C or V to preview a wall, floor, ramp or cone, release to place it; B switches material.",
+    "Press G to swing the pickaxe at trees, wrecks and the Llama for materials; press H to crank a 90s tower.",
+    "Walk up to a glowing chest to open it, then walk over the dropped guns to take them."
+  ],
   "kind": "mashup",
   "games": [
     {
@@ -264,8 +270,5 @@
     "id": "gta5",
     "status": "draft"
   },
-  "built_at": "2026-10-05T15:23:39.533Z",
-  "notes": [
-    "Put the mod folder in your FiveM server's resources folder as sigf_mod, add \"ensure sigf_mod\" to server.cfg, then join the server. It works anywhere on the map."
-  ]
+  "built_at": "2026-10-05T15:23:39.533Z"
 }
